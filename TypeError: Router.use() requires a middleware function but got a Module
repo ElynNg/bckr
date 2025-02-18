@@ -1,0 +1,25 @@
+#TypeError: Router.use() requires a middleware function but got a Module
+
+#Reason: This error occured when mixing import-export and const-modeul.export together
+
+#Trouble Shooting
+1. 
+const express = require('express');
+const router = express.Router();
+
+// Define routes
+router.get('/', (req, res) => {
+  res.send('Hello from API!');
+});
+
+module.exports = router;
+
+2.
+import express from 'express';
+const router = express.Router();
+
+router.get('/', (req, res) => {
+  res.send('Hello from API!');
+});
+
+export default router;

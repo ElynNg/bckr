@@ -1,0 +1,21 @@
+#How to use postman to test api connection
+
+#1. Download Postman in your local
+
+#2. In server.js must include these code
+const mongoUri =
+  "mongodb+srv://ndym1489:<db_password>@roi.2x1nn.mongodb.net/?retryWrites=true&w=majority&appName=roi";
+
+mongoose
+  .connect(mongoUri, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
+  .then(() => {
+    console.log("MongoDB Connected...");
+  })
+  .catch((err) => console.log(err));
+
+  server.use(express.json());
+
+

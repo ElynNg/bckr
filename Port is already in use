@@ -1,0 +1,7 @@
+#Port is already in use
+
+#1. Identify the Process Using the Port: Open a terminal and run the following command to find the process ID (PID) using port 3000:
+netstat -ano | findstr :3000
+
+#2. Terminate the Process
+taskkill /PID <the last column's code> /F

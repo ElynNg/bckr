@@ -1,0 +1,23 @@
+# Working with Redux-Saga: Understanding `call` and `fork`
+
+While working with Redux-Saga, I encountered the concepts of `call` and `fork`. Here's what I learned about them:
+
+## 1. `call`
+- **Purpose**:  
+  Used to invoke a function and wait for the result.
+
+- **Blocking**:  
+  When using `call`, the saga execution will pause at that line and wait for the promise to resolve or reject.
+
+- **Usage**:  
+  Best used when you need to wait for the result of an async operation.
+
+## 2. `fork`
+- **Purpose**:  
+  Used to spawn a new non-blocking task, allowing the current saga to continue executing without waiting for the result.
+
+- **Non-blocking**:  
+  `fork` starts a new task in the background and immediately moves to the next line in the calling saga, without waiting for the task to complete.
+
+- **Usage**:  
+  Best used when you want to initiate a task asynchronously and don't need to wait for it to finish.

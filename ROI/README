@@ -1,0 +1,12 @@
+# My First React Project - Dashboard
+
+This is my first React project developed as part of my work. It features a fully functional dashboard built with **React**, **Redux**, **Redux-Saga**, and **Next.js**.
+
+## Key Features:
+- **React**: Used for building the user interface.
+- **Redux**: Manages application state.
+- **Redux-Saga**: Handles side effects like API calls.
+- **Next.js**: Provides server-side rendering and routing for better performance.
+
+## Description
+In this project, I created a dynamic and responsive dashboard that allows users to interact with data efficiently. The application is built using modern front-end tools and libraries, ensuring scalability and maintainability.
